@@ -1,0 +1,53 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+public enum City {
+
+    Chennai(1),
+    Coimbatore(2),
+    Karaikiudi(3),
+    Thanjavur(4),
+    Bangalore(5),
+    Trichy(6),
+    Pudukottai(7)
+private int value;
+private City(int value) {
+    this.value = value;
+}
+      public int getValue() {
+    return this.value;
+}
+ 
+
+
+
+
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		 for(City place: City.values())
+    System.out.println(place.name());
+
+public String toString() {
+    switch(this) {
+        case Chennai:
+            return "Chennai: " + value;
+        case Coimbatore:
+            return "Coimbatore: " + value;
+        case Karaikudi:
+            return "Karaikudi: " + value;
+        case Thanjavur:
+            return "Thanjavur: " + value;
+  		case Bangalore:
+            return "Bangalore: " + value;
+        case Trichy:
+            return "Trichy: " + value;
+        case Pudukottai:
+            return "Pudukottai: " + value;
+        default:
+            return null;
+    }
+}
+
+
+	}
+}
