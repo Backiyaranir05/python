@@ -1,0 +1,13 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class GUVI
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		String str1=new String("dora");
+        String str2=new String("dora");
+      System.out.println("str1==str2"+str1==str2);
+      System.out.println("str1.equals(str2)"+str1.equals(str2));
+	}
+}
