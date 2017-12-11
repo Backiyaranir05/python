@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Library
+{
+  private String bookName;
+  private int bookNum;
+  public void setValues(int bookNum,String bookName)
+  {
+    this.bookNum=bookNum;
+    this.bookName=bookName;
+  }
+  public void getValues()
+  {
+    System.out.println("Book Id: "+bookNum+"\nBook Name: "+bookName);
+  }
+}
+ 
+public class MyClass
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Library l=new Library();
+        l.setValues(100,"Dreams");
+        l.getValues();
+	}
+}
