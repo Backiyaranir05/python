@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class GUVI
+{
+  public int a=10;
+  public double d=12345600;
+  public float f=11.23;
+  public void print()
+  {
+    System.out.println("a="+a+"  d="+d+"  f="+f);
+  }
+}
+class GUVI2 extends GUVI
+{
+  public void display()
+  {
+  System.out.println("hello");
+  }
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	GUVI2 g2=new GUVI2();
+    GUVI g=new GUVI();
+    GUVI2 g1=g;
+    GUVI g5=g2;  
+	}
+}
