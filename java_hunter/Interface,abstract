@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+interface GUVI
+{
+  public final static a=100;
+  public void printLine();
+}
+abstract class MyClass
+{
+  public abstract void print();
+}
+public Class MyString implements GUVI
+{
+  public void printLine(){
+    System.out.println("hello am interface");
+  }
+ public abstract void print()
+ {
+   System.out.println("hi am abstract");
+ }
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		MyString ms=new MyString();
+        ms.printLine();
+        ms.print();
+      
+	}
+}
