@@ -1,0 +1,22 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class MyClass
+{
+   String s=new String("My class");
+}
+class MySecondClass extends MyClass
+{
+  String s=new String("My Second Class");
+  public void print()
+  {
+    System.out.println("Base class : "+s);
+    System.out.println("Derived class : "+super.s);
+  }
+  
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    MySecondClass msc=new MySecondClass();
+        msc.print();
+	}
+}
