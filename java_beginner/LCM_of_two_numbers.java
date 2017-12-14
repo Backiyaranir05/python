@@ -1,21 +1,21 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-class JavaProgram
+class LCMofNumbers
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		int n1,n2,lcm;
+		int num1,num2,lcm;
       Scanner s=new Scanner(System.in);
-      n1=s.nextInt();
-      n2=s.nextInt();
+      num1=s.nextInt();
+      num2=s.nextInt();
 
-        lcm = (n1 > n2) ? n1 : n2;
+        lcm = (num1 > num2) ? num1 : num2;
 
 
         while(true)
         {
-            if( lcm % n1 == 0 && lcm % n2 == 0 )
+            if( lcm % num1 == 0 && lcm % num2 == 0 )
             {
                 System.out.println( lcm);
                 break;
